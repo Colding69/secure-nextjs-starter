@@ -1,5 +1,9 @@
 # secure-nextjs-starter
 
+[![security](https://github.com/Colding69/secure-nextjs-starter/actions/workflows/security.yml/badge.svg)](https://github.com/Colding69/secure-nextjs-starter/actions/workflows/security.yml)
+[![CodeQL](https://github.com/Colding69/secure-nextjs-starter/actions/workflows/codeql.yml/badge.svg)](https://github.com/Colding69/secure-nextjs-starter/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://github.com/Colding69/secure-nextjs-starter/actions/workflows/scorecard.yml/badge.svg)](https://github.com/Colding69/secure-nextjs-starter/actions/workflows/scorecard.yml)
+
 A security-first Next.js 16 starter for teams that want secure defaults with tests, not a checklist.
 
 It ships authentication, typed RBAC, strict nonce-based CSP, SSRF-safe outbound fetching, rate limiting, append-only audit logging, upload validation, and a CI pipeline with SAST, SCA, secret scanning and an SBOM. Every control listed below has an automated test.
