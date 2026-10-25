@@ -1,10 +1,11 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { redirect } from "next/navigation";
 import { LogoutButton } from "@/components/logout-button";
 import { can, isRole } from "@/lib/rbac";
 import { getSession, roleOf } from "@/lib/session";
 
-export default async function AppLayout({ children }: LayoutProps<"/">) {
+export default async function AppLayout({ children }: { children: ReactNode }) {
   const session = await getSession();
   if (!session) {
     redirect("/login");
